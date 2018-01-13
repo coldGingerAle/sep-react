@@ -3,9 +3,13 @@ import Styles from './Styles.js'
 import VanillaTilt from 'vanilla-tilt';
 
 class Tilt extends Component {
+  constructor(props) {
+    super(props)
+  }
   componentDidMount() {
     VanillaTilt.init(this.rootNode, {
-      scale: 1.1
+      scale: 1.1,
+      perspective: 1000
     })
   }
   render() {
@@ -14,8 +18,8 @@ class Tilt extends Component {
         ref={node => (this.rootNode = node)}
         className="tilt-root"
       >
-        <div style={{...Styles.Tilt.OuterContainer}}>
-          <div style={{...Styles.Tilt.TextContainer}}>Hello World</div>
+        <div>
+          <div>{this.props.children}</div>
         </div>
       </div>
     );

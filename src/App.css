@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -50,6 +51,54 @@
   height: 50vh;
   padding: 20px;
   font-size: 1.2em;
+}
+
+#our-mission {
+  text-align: center;
+  font: "NFadeUnito Sans, sans-serif";
+  font-size: 1.2em;
+  background-color: black;
+  color: #5CD7FD;
+  font-weight: 400;
+  height: 100vh;
+}
+
+#our-mission p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.4em;
+  color: white;
+}
+
+#our-resources {
+  text-align: center;
+  font: "NFadeUnito Sans, sans-serif";
+  font-size: 1.2em;
+  background-color: black;
+  /* color: #5CD7FD; */
+  color: white;
+  font-weight: 400;
+  height: auto;
+}
+
+#our-resources img {
+  width: 40%;
+}
+
+#particles-js {
+}
+
+.department-section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.department-section img {
+  margin: 10px;
+}
+
+.department-section h1 {
+  margin: 0
 }
 
 @media only screen and (min-width: 640px) {
@@ -109,5 +158,11 @@
       height: 100vh;
       padding: 40px;
       font-size: 3.5em;
+    }
+
+    #our-mission {
+      margin-top: -3px;
+      font-size: 2em;
+      padding-top: 40px;
     }
 }

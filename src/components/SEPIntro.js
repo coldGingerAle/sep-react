@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FadeUnit from './FadeUnit'
+import AnimatedWord from './AnimatedWord'
 import { Transition } from 'react-transition-group'
 
 class SEPIntro extends Component {
@@ -43,7 +44,7 @@ class SEPIntro extends Component {
         </div>
         <div>
           <FadeUnit show={show} delay={1950} increment={1}>E</FadeUnit>
-          <FadeUnit show={show} color={"white"} delay={3100} increment={1}>ducate</FadeUnit>
+          <FadeUnit show={show} color={"white"} delay={3100} increment={1}>ducate</FadeUnit>>
         </div>
         <div>
           <FadeUnit show={show} delay={2450} increment={1}>O</FadeUnit>
