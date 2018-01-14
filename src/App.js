@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
 import OurMission from './components/OurMission'
 import OurResources from './components/OurResources'
 import LandingPage from './pages/LandingPage'
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import './App.css';
 
 class App extends Component {
   render() {

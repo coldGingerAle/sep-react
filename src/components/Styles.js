@@ -25,7 +25,6 @@ const Styles = {
       transition: `opacity 1000ms ease-in-out`,
       opacity: 0,
       display: 'inline-block',
-      fontFamily: 'NFadeUnito Sans, sans-serif',
       fontSize: '2em',
       fontWeight: 400,
       color: '#5CD7FD'
