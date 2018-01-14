@@ -4,9 +4,7 @@ export default class LandingPageImage extends Component {
   render() {
     const show = this.state;
     return(
-      <div>
-        <img id="landing-page-image" src="https://i.imgur.com/10ATzaf.jpg"/>
-      </div>
+      <img id="landing-page-image" src="https://i.imgur.com/10ATzaf.jpg"/>
     )
   }
 }

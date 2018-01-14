@@ -26,17 +26,19 @@ class SEPIntro extends Component {
     }
     return (
       <div>
-        <div>
-          <FadeUnit show={show} delay={300} increment={1}>S</FadeUnit>
-          <FadeUnit show={show} delay={1450} increment={1}>TUDENT</FadeUnit>
-        </div>
-        <div>
-          <FadeUnit show={show} delay={300 + 500} increment={1}>E</FadeUnit>
-          <FadeUnit show={show} delay={1450 + 500} increment={1}>MPOWERMENT</FadeUnit>
-        </div>
-        <div>
-          <FadeUnit show={show} delay={300 + 1000} increment={1}>P</FadeUnit>
-          <FadeUnit show={show} delay={1950 + 500} increment={1}>ROJECT</FadeUnit>
+        <div className="big-title">
+          <div>
+            <FadeUnit show={show} delay={300} increment={1}>S</FadeUnit>
+            <FadeUnit show={show} delay={1450} increment={1}>TUDENT</FadeUnit>
+          </div>
+          <div>
+            <FadeUnit show={show} delay={300 + 500} increment={1}>E</FadeUnit>
+            <FadeUnit show={show} delay={1450 + 500} increment={1}>MPOWERMENT</FadeUnit>
+          </div>
+          <div>
+            <FadeUnit show={show} delay={300 + 1000} increment={1}>P</FadeUnit>
+            <FadeUnit show={show} delay={1950 + 500} increment={1}>ROJECT</FadeUnit>
+          </div>
         </div>
         <div style={{marginTop: 8}}>
           <FadeUnit show={show} delay={1450} increment={1}>A</FadeUnit>

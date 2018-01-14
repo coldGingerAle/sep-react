@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .App-logo {
@@ -39,10 +39,16 @@
   padding: 0;
 }
 
+.row {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
 #landing-page-image {
   height: 50vh;
   width: 100vw;
-  margin-bottom: -3px
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 #SEP-intro {
@@ -51,41 +57,55 @@
   height: 50vh;
   padding: 20px;
   font-size: 1.2em;
+  margin-top: -5px;
 }
 
 #our-mission {
   text-align: center;
-  font: "NFadeUnito Sans, sans-serif";
+
   font-size: 1.2em;
   background-color: black;
   color: #5CD7FD;
   font-weight: 400;
+  height: auto;
   height: 100vh;
 }
 
-#our-mission p {
+.mission-paragraph {
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: white;
+  margin-bottom: 20px;
 }
 
 #our-resources {
   text-align: center;
-  font: "NFadeUnito Sans, sans-serif";
+
   font-size: 1.2em;
   background-color: black;
   /* color: #5CD7FD; */
   color: white;
   font-weight: 400;
   height: auto;
+  min-height: 100vh;
+}
+
+#our-resources h1 {
+  color: #5CD7FD;
 }
 
 #our-resources img {
   width: 40%;
 }
 
-#particles-js {
+#sepqc-logo {
+  height: 60px;
+  width: 60px;
+}
+
+.brand-logo {
+  padding: 5px;
 }
 
 .department-section {
@@ -99,6 +119,10 @@
 
 .department-section h1 {
   margin: 0
+}
+
+.big-title {
+  letter-spacing: 0.16em;
 }
 
 @media only screen and (min-width: 640px) {
@@ -126,7 +150,6 @@
     #landing-page-image {
       height: 100vh;
       width: 50vw;
-      margin-bottom: -3px;
       margin: auto;
       object-fit: cover;
       position: relative;
@@ -138,6 +161,7 @@
       height: 100vh;
       padding: 40px;
       font-size: 1.5em;
+      margin-top: 0px;
     }
 }
 
@@ -146,7 +170,6 @@
     #landing-page-image {
       height: 100vh;
       width: 50vw;
-      margin-bottom: -3px;
       margin: auto;
       object-fit: cover;
       position: relative;
@@ -161,8 +184,6 @@
     }
 
     #our-mission {
-      margin-top: -3px;
       font-size: 2em;
-      padding-top: 40px;
     }
 }

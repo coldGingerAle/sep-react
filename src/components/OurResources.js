@@ -126,7 +126,7 @@ export default class OurResources extends Component {
       }/>
     )
     return(
-      <div id="our-resources" className="col s12">
+      <div id="our-resources" className="col s12 row">
         <div className="col s10 offset-s1">
           <h1>OUR RESOURCES</h1>
 

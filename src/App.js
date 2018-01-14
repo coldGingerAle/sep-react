@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
 import './App.css';
-import SEPIntro from './components/SEPIntro'
-import LandingPageImage from './components/LandingPageImage'
 import OurMission from './components/OurMission'
 import OurResources from './components/OurResources'
+import LandingPage from './pages/LandingPage'
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div style={{margin: 0, padding: 0, width: "100%", maxWidth: "initial"}} className="container">
-        <div className="row">
-          <div className="col s12 m6 l6">
-            <LandingPageImage />
+        <Router>
+          <div>
+            <Navbar />
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/mission" component={OurMission} />
+            <Route exact path="/resources" component={OurResources} />
           </div>
-          <div id="SEP-intro" className="col s12 m6 l6">
-            <SEPIntro />
-          </div>
-        </div>
-        <div className="row">
-          <OurMission />
-        </div>
-        <div className="row">
-          <OurResources />
-        </div>
+        </Router>
       </div>
     )
   }
